@@ -1,0 +1,26 @@
+{
+  "name": "react-ssr-use-cookie",
+  "private": true,
+  "scripts": {
+    "build": "NODE_PATH=. NODE_ENV=production webpack --progress --mode production",
+    "dev": "NODE_PATH=. webpack --watch --mode development & nodemon -e js,jsx"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "cookie-parser": "1.4.4",
+    "express": "4.16.4",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.4",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.4.4",
+    "babel-loader": "8.0.5",
+    "nodemon": "1.19.0",
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.1"
+  }
+}
