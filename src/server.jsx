@@ -4,7 +4,6 @@ import cookieParser from 'cookie-parser';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import App from './components/App';
-import { CookiesProvider, ServerCookiesManager } from './services/cookie';
 
 const app = express();
 
@@ -14,13 +13,7 @@ app
     .use(render);
 
 function render(req, res) {
-    const cookieManager = new ServerCookiesManager(req, res);
-
-    const jsx = (
-        <CookiesProvider manager={cookieManager}>
-            <App />
-        </CookiesProvider>
-    );
+    const jsx = (<App />);
     const reactDom = renderToString(jsx);
 
     res.send(htmlTemplate(reactDom));

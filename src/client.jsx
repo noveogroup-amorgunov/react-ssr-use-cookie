@@ -2,12 +2,7 @@ import React from 'react';
 import { hydrate } from 'react-dom';
 import 'babel-polyfill';
 import App from './components/App';
-import { CookiesProvider } from './services/cookie';
 
-const jsx = (
-    <CookiesProvider>
-        <App />
-    </CookiesProvider>
-);
+const jsx = (<App />);
 
 hydrate(jsx, document.getElementById('mount'));
