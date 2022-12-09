@@ -8,7 +8,7 @@
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "cookie-parser": "1.4.4",
-    "express": "4.16.4",
+    "express": "4.17.3",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
